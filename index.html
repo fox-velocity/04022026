@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulateur Impôt 2025</title>
-    <!-- On garde Tailwind en CDN pour la simplicité du rendu immédiat -->
+    <!-- Tailwind via CDN pour un rendu rapide des styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -29,7 +29,9 @@
 </head>
   <body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
-    <!-- LE POINT CRUCIAL : src="./index.tsx" (avec le point) permet à Vite de trouver et compiler le fichier -->
+    <!-- Point d'entrée de l'application. 
+         IMPORTANT : src="./index.tsx" avec le point permet à Vite de localiser le fichier 
+         et de le transformer durant le processus de build. -->
     <script type="module" src="./index.tsx"></script>
   </body>
 </html>
