@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulateur Impôt 2025</title>
+    <!-- On garde Tailwind en CDN pour la simplicité du rendu immédiat -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -28,7 +29,7 @@
 </head>
   <body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
-    <!-- Chemin relatif indispensable pour que Vite résolve le point d'entrée dans un sous-répertoire -->
+    <!-- LE POINT CRUCIAL : src="./index.tsx" (avec le point) permet à Vite de trouver et compiler le fichier -->
     <script type="module" src="./index.tsx"></script>
   </body>
 </html>
