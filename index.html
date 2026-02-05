@@ -4,43 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulateur Impôt 2025</title>
-    
-    <!-- Tailwind CSS via CDN -->
+    <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Polices -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
     <style>
       body {
         font-family: 'Inter', sans-serif;
       }
-      [v-cloak] { display: none; }
     </style>
-
-    <!-- IMPORT MAP CORRIGÉE : React 18.3.1 uniquement -->
     <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@18.3.1",
-    "react/": "https://esm.sh/react@18.3.1/",
-    "react-dom": "https://esm.sh/react-dom@18.3.1",
-    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
-    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
-    "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react,react-dom",
-    "chart.js/auto": "https://esm.sh/chart.js@4.4.1/auto",
-    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
     "chart.js/": "https://esm.sh/chart.js@^4.5.1/",
-    "vite": "https://esm.sh/vite@^7.3.1",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3"
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "jspdf": "https://esm.sh/jspdf@^3.0.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
   }
 }
 </script>
-  </head>
+<link rel="stylesheet" href="/index.css">
+</head>
   <body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
-    
-    <!-- Chargement direct du point d'entrée TypeScript/React -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Point d'entrée pour Vite -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
